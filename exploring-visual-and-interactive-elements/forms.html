@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Formularios">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <a href="index.html" target="_self" title="Regresar">
+        <img src="images/back.png" alt="Regresar..." width="40" height="40">
+    </a>
+    <h1>Formularios</h1>
+
+    <h2>Primer Formulario</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="name" required>
+            <br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="email" required>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="clave" name="password" required>
+            <br>
+            <p>Género:</p>
+            <label><input type="radio" name="gender" value="masculino" required>Masculino</label>
+            <label><input type="radio" name="gender" value="femenino">Femenino</label>
+            <label><input type="radio" name="gender" value="otro">Otro</label>
+        </fieldset>
+        <p>Idiomas que hablas:</p>
+        <label><input type="checkbox" name="languages[]" value="spanish">Español</label>
+        <label><input type="checkbox" name="languages[]" value="english">Ingles</label>
+        <label><input type="checkbox" name="languages[]" value="german">Alemán</label>
+        <label><input type="checkbox" name="languages[]" value="french">Frances</label>
+        <br><br>
+        <label for="comentario">Comentario</label><br>
+        <textarea id="comentario" name="comments" required placeholder="Tu comentario aquí..." cols="50" rows="8"
+            maxlength="50"></textarea>
+        <br>
+        <label for="nacionalidad">Selecciona tu nacionalidad:</label>
+        <select id="nacionalidad" name="nationality" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="co">Colombiano(a)</option>
+            <option value="mx">Mexicano(a)</option>
+            <option value="ar">Argentino(a)</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert('Hola Mundo')">¡Hola Mundo!</button>
+    </form>
+    <hr>
+    <h2>Segundo Formulario: Curso en Línea</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name-online">Nombre Completo:</label><br>
+            <input type="text" id="name-online" name="name-online" required>
+            <br><br>
+            <label for="id-online">Número de Identificación:</label><br>
+            <input type="text" id="id-online" name="id-online" required>
+            <br><br>
+            <label for="email-online">Correo Electrónico:</label><br>
+            <input type="email" id="email-online" name="email-online" required>
+            <br><br>
+            <label for="password-online">Contraseña:</label><br>
+            <input type="password" id="password-online" name="password-online" required>
+            <br><br>
+            <p>Tipo de Documento:</p>
+            <label><input type="radio" name="type-of-document-online" value="cedula" required>Cédula (C.C.)</label>
+            <label><input type="radio" name="type-of-document-online" value="pasaporte">Pasaporte</label>
+            <label><input type="radio" name="type-of-document-online" value="otro">Otro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias de Curso</legend>
+            <label for="course-online">Cursos:</label><br>
+            <select id="course-online" name="courses-online[]" multiple size="5" required>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="dart">Dart</option>
+            </select>
+            <br><br>
+            <p>Modalidad de Estudios:</p>
+            <label><input type="checkbox" name="modes-online[]" value="presencial">Presencial</label>
+            <label><input type="checkbox" name="modes-online[]" value="virtual">Virtual</label>
+            <label><input type="checkbox" name="modes-online[]" value="hibrida">Híbrida</label>
+            <br><br>
+            <label for="comments">¿Por qué quiere tomar el curso?:</label><br>
+            <textarea id="comments" name="comments" placeholder="Escribe tus comentarios" cols="50" rows="5"
+                maxlength="200" required></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert('Gracias por registrarte')">Mensaje</button>
+    </form>
+</body>
+
+</html>
