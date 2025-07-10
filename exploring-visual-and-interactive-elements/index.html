@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Exploración de elementos visuales e interactivos">
+    <title>Elementos visuales e interactivos</title>
+</head>
+
+<body>
+    <h1>Exploración de Elementos Visuales e Interactivos</h1>
+
+    <!--
+    Sección enfocada al estudio de imágenes con HTML, en donde se considera la siguiente etiqueta:
+        *   <img>
+        En conjunto con los siguientes atributos:
+            *   src=""
+            *   alt=""
+            *   width=""
+            *   height=""
+            *   srcset=""
+            *   sizes=""
+    -->
+    <h2>Exploración de Imágenes</h2>
+    <img src="https://edube.org/uploads/media/default/0001/03/mountain_landscape.jpg" alt="Paisaje de montaña"
+        width="340" height="250">
+    <br><br>
+    <img src="images/bird.jpg" srcset="images/bird-400.jpg 400w, 
+    images/bird-800.jpg 800w,
+    images/bird-1200.jpg 1200w,
+    images/bird-1600.jpg 1600w"
+        sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, (max-width: 1024px) 85vw, (max-width: 1440px) 80vw, 75vw"
+        alt="Imagen de ave">
+    <br>
+    <!--
+    Para la siguiente imagen se reconoce el uso de los siguientes atributos más "históricos" (Es preferible 
+    estilizar con CSS hoy en día):
+        *   border=""
+        *   vspace=""
+        *   hspace=""
+    -->
+    <img src="images/white-bird.jpg" width="500" height="300" alt="Ave blanca" border="3" vspace="30" hspace="200">
+
+    <h2>Hipervínculos</h2>
+    <ul>
+        <li><a href="nature.html" target="_self">Ir a Página de Naturaleza...</a></li>
+        <li><a href="video-and-audio.html" target="_self">Ir a Página de Video y Audio</a></li>
+    </ul>
+</body>
+
+</html>

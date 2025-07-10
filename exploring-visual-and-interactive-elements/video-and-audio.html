@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Video y Audio">
+    <title>Video y Audio</title>
+</head>
+
+<body>
+    <h1>Sitio Web de Video y Audio</h1>
+
+    <h2>Olas</h2>
+    <video src="videos/surf/surf.mp4" controls preload="auto" autoplay loop width="400" height="200">El video no ha
+        podido ser
+        cargado...</video>
+    <hr>
+
+    <h2>Montaña</h2>
+    <video autoplay loop preload="auto" controls>
+        <source src="videos/mountain/mountain.mp4" type="video/mp4">
+        <source src="videos/mountain/mountain.webm" type="video/webm">
+        <p>El video no ha podido ser cargado...</p>
+    </video>
+    <hr>
+
+    <h2>Música Future Design</h2>
+    <audio controls loop preload="auto">
+        <source src="audios/future-design/future-design.mp3" type="audio/mp3">
+        <source src="audios/future-design/future-design.ogg" type="audio/ogg">
+        <p>El audio no ha podido ser cargado...</p>
+    </audio>
+
+    <h2>Video de Patito</h2>
+    <video poster="images/duck-poster.jpg" controls loop preload="auto">
+        <source src="videos/duck/duck-400.mp4" type="video/mp4" media="(max-width: 1300px)">
+        <source src="videos/duck/duck-1280.mp4" type="video/mp4">
+        <p>El video no ha podido ser cargado...</p>
+    </video>
+</body>
+
+</html>
