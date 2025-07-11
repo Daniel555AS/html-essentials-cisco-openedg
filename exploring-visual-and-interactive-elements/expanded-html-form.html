@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Formulario de registro a evento">
+    <title>Formulario de Registro a Evento</title>
+</head>
+
+<body>
+    <a href="forms.html" title="Regresar" target="_self">
+        <img src="images/back.png" width="40" height="40" alt="Regresar">
+    </a>
+    <h1>Formulario de Registro a Evento</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre Completo: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Ortiz" required>
+
+            <br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Ej: example@correo.com" required>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Evento</legend>
+
+            <p>Escoge tu comida preferida:</p>
+            <label>Vegetariana<input type="radio" name="comida" value="vegetariana" required></label>
+            <label>No Vegetariana<input type="radio" name="comida" value="no-vegetariana"></label>
+
+            <p>Selecciona los talleres a los que te gustaría participar:</p>
+            <label>Taller 1<input type="checkbox" name="talleres[]" value="taller-1"></label>
+            <label>Taller 2<input type="checkbox" name="talleres[]" value="taller-2"></label>
+            <label>Taller 3<input type="checkbox" name="talleres[]" value="taller-3"></label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Registrarme">
+    </form>
+</body>
+
+</html>
