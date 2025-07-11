@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Conferencia Internacional de Tecnología y Desarrollo Web">
+    <title>Conferencia Internacional de Tecnología y Desarrollo Web</title>
+</head>
+
+<body>
+    <a href="forms.html" target="_self">
+        <img src="images/back.png" alt="Regresar" width="40" height="40">
+    </a>
+    <h1>Conferencia Internacional de Tecnología y Desarrollo Web</h1>
+    <p>Bienvenido a la Conferencia Internacional de Tecnología y Desarrollo Web, un evento que reúne a profesionales,
+        estudiantes y entusiastas de todo el mundo para explorar las últimas tendencias en programación, diseño,
+        inteligencia artificial y más.
+        Consulta toda la información del evento en nuestro sitio oficial:</p>
+    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Visita Nuestro Sitio Web</a>
+    <br><br>
+    <h2>¿Interesado en la Información de Talleres?</h2>
+    <table border="2" cellpadding="15" cellspacing="5" bgcolor="#e8f5fb">
+        <caption>Tabla informativa de talleres</caption>
+        <thead bgcolor="#6dc9ee">
+            <tr>
+                <th>Taller</th>
+                <th>Día y Hora</th>
+                <th>Cupos Disponibles</th>
+                <th>Modalidad</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>Introducción a HTML y CSS</td>
+                <td>Lunes 10:00 a.m. – 12:00 p.m.</td>
+                <td>25</td>
+                <td>Virtual</td>
+            </tr>
+            <tr>
+                <td>JavaScript Interactivo</td>
+                <td>Martes 2:00 p.m. – 4:00 p.m.</td>
+                <td>30</td>
+                <td>Presencial</td>
+            </tr>
+            <tr>
+                <td>Desarrollo con React</td>
+                <td>Miércoles 9:00 a.m. – 11:00 a.m.</td>
+                <td>20</td>
+                <td>Híbrida</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de UI/UX</td>
+                <td>Jueves 1:00 p.m. – 3:00 p.m.</td>
+                <td>15</td>
+                <td>Virtual</td>
+            </tr>
+            <tr>
+                <td>Introducción a Python para Web</td>
+                <td>Viernes 10:00 a.m. – 12:00 p.m.</td>
+                <td>40</td>
+                <td>Presencial</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <h2>Formulario de Inscripción</h2>
+    <form>
+        <fieldset>
+            <legend>Información del Participante</legend>
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+            <label for="pais-origen">País de Origen:</label><br>
+            <select id="pais-origen" name="pais-origen" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="peru">Perú</option>
+            </select>
+            <br><br>
+            <p>Género:</p>
+            <label><input type="radio" name="genero" value="masculino" required>Masculino</label>
+            <label><input type="radio" name="genero" value="femenino">Femenino</label>
+            <label><input type="radio" name="genero" value="otro">Otro</label>
+            <br><br>
+            <p>¿Requiere certificado de asistencia?</p>
+            <label><input type="checkbox" name="asistencia" value="si">Sí</label>
+        </fieldset>
+        <fieldset>
+            <legend>Inscripción a Talleres</legend>
+            <label>Selección de Cursos:</label><br>
+            <select id="cursos" name="cursos[]" required multiple size="5">
+                <option value="intro-html-css">Introducción a HTML y CSS</option>
+                <option value="js-interac">JavaScript Interactivo</option>
+                <option value="react">Desarrollo con React</option>
+                <option value="ux-ui">Fundamentos de UI/UX</option>
+                <option value="py-web">Introducción a Python para Web</option>
+            </select>
+            <br><br>
+            <p>Medio de Participación Preferido</p>
+            <label><input type="radio" name="medio" value="presencial" required>Presencial</label>
+            <label><input type="radio" name="medio" value="virtual">Virtual</label>
+            <label><input type="radio" name="medio" value="hibrido">Híbrido</label>
+            <br><br>
+            <label>Comentarios o Requerimientos Especiales</label><br>
+            <textarea id="comentarios" name="comentarios" required maxlength="100" rows="5" cols="50"
+                placeholder="Escribe aquí tus comentarios o requerimientos especiales..."></textarea>
+            <br>
+            <label>
+                <input type="checkbox" name="terminos-condiciones" required>
+                Acepto los <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Términos y
+                    Condiciones</a>
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert('¡Gracias por inscribirte en la conferencia!')">Ver
+            Agradecimientos</button>
+    </form>
+</body>
+
+</html>
