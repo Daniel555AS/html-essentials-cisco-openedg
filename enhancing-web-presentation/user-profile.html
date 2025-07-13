@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Tarjeta de perfil multilingüe e interactiva">
+    <title>Tarjeta de Perfil</title>
+</head>
+
+<body>
+    <h1>Perfil del Usuario</h1>
+
+    <p lang="en">Hello! This is a short profile summary written in English.</p>
+
+    <button type="button"
+        onclick="alert('Mostrar más Información: Activado'); document.getElementById('mas-info').removeAttribute('hidden')"
+        accesskey="o">Mostrar más
+        Información (Alt + O)</button>
+
+    <div id="mas-info" hidden>
+        <p><strong>Fecha de Ingreso:</strong> 12/07/2025</p>
+        <p><strong>Hobbies del Usuario:</strong></p>
+        <ul>
+            <li>Jugar Baloncesto.</li>
+            <li>Aprender Programación.</li>
+            <li>Tocar la Guitarra.</li>
+        </ul>
+    </div>
+
+    <p dir="rtl">مرحبا كيف الحال؟</p>
+    <p translate="no">OpenTech</p>
+</body>
+
+</html>

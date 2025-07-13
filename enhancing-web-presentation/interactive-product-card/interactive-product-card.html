@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Tarjeta interactiva de producto con efectos de usuario">
+    <title>Producto Aceite de Oliva</title>
+    <style>
+        #contenedor-aceite-oliva {
+            background-color: cornsilk;
+        }
+
+        #descripcion-aceite-oliva {
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        #titulo-aceite-oliva {
+            font-size: 40px;
+            color: goldenrod;
+            display: inline-block;
+        }
+
+        #txt-producto-agregado {
+            color: green;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Producto: Aceite de Oliva</h1>
+    <div id="contenedor-aceite-oliva">
+        <h2 id="titulo-aceite-oliva" onmouseover="this.style.color='rgb(129, 97, 18)'"
+            onmouseout="this.style.color='goldenrod'">Aceite de Oliva</h2>
+        <br>
+        <img src="images/olive-oil.jpg" alt="Aceite de Oliva" title="Aceite de Oliva"
+            onmouseover="this.style.width='600px'" onmouseout="this.style.width='400px'" width="400px">
+        <p id="descripcion-aceite-oliva">Aceite de oliva extra virgen 100% natural, prensado en frío, ideal para
+            realzar
+            el sabor de tus comidas con
+            un toque saludable y gourmet.</p>
+        <p>INGRESE UN CÓDIGO DE DESCUENTO:</p>
+        <input id="cod-dcto" type="text" maxlength="6" onkeydown="this.style.borderColor='green'"
+            onkeyup="document.getElementById('txt-cod-dcto').textContent=this.value; document.getElementById('txt-cod-dcto').removeAttribute('hidden')"><br>
+        <p id="txt-cod-dcto" hidden></p>
+        <br>
+        <button type="button" id="boton-carrito"
+            onclick="alert('¡PRODUCTO AÑADIDO CON ÉXITO!'); document.getElementById('txt-producto-agregado').removeAttribute('hidden'); this.style.backgroundColor='rgb(19, 109, 28)'; this.style.color='white'">Añadir
+            al carrito</button>
+        <button type="button"
+            onclick="document.getElementById('titulo-aceite-oliva').textContent='Aceite de Oliva (VISTO)'; this.style.backgroundColor='rgb(19, 109, 28)'; this.style.color='white'">Marcar
+            Como Visto</button>
+        <p id="txt-producto-agregado" hidden>¡PRODUCTO AÑADIDO CON ÉXITO!</p>
+    </div>
+</body>
+
+</html>

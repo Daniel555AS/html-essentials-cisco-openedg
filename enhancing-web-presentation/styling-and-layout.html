@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Prácticas de mejora de la presentación web">
+    <title>Presentación Web</title>
+    <style>
+        h1 {
+            color: brown;
+            background-color: cadetblue;
+            font-size: 80px;
+        }
+
+        #hello-world {
+            color: coral;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #text-color-name {
+            color: aquamarine;
+            font-size: 40px;
+        }
+
+        #text-hex {
+            color: #51903a;
+            font-size: 40px;
+        }
+
+        #text-rgb {
+            color: RGB(203, 197, 0);
+            font-size: 40px;
+        }
+
+        #text-back-color {
+            color: white;
+            background-color: red;
+            font-size: 40px;
+        }
+
+        #texto-estilizado {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            font-style: oblique;
+            font-weight: 800;
+        }
+
+        #texto-uno {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        #txt-rojo {
+            color: red;
+        }
+
+        #txt-amarillo {
+            color: yellow;
+        }
+
+        .parrafos-similares {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: darkblue;
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Presentación Web</h1>
+
+    <p style="color: blueviolet; font-size: 20px;">Estilos para párrafos en línea</p>
+    <p id="hello-world">Hola Mundo ;)</p>
+    <p id="text-color-name">Texto con color propuesto por NOMBRE de color</p>
+    <p id="text-hex">Texto con color propuesto por Código HEX de color</p>
+    <p id="text-rgb">Texto con color propuesto por RGB</p>
+    <p id="text-back-color">Texto con color de fondo ROJO</p>
+    <p id="texto-estilizado">Texto Estilizado</p>
+    <p id="texto-uno">Los colores de la bandera de España: <span id="txt-rojo">ROJO</span> y <span
+            id="txt-amarillo">AMARILLO</span></p>
+    <p class="parrafos-similares" title="Párrafos similares - 1">Primer Párrafo con estilo similar</p>
+    <p class="parrafos-similares" title="Párrafos similares - 2">Segundo Párrafo con estilo similar</p>
+
+    <h2>Exploración de Otros Atributos</h2>
+    <p lang="es">Texto en Español</p>
+    <p lang="en">English!</p>
+    <button type="button" onclick="alert('Hello World!')" accesskey="k">Activar Acción (Alt+ K)</button>
+    <button type="button" onclick="alert('Helooo!')" hidden accesskey="l">Botón Oculto</button>
+    <p dir="ltr">Texto de izquierda a derecha</p>
+    <p dir="rtl">Texto de derecha a izquierda</p>
+    <p translate="no">Text in English! - Translate=no</p>
+    <p>Hello, how are you doing?</p>
+
+    <h2>Atributos de Eventos</h2>
+    <button onclick="alert('Hola, ¿Qué tal?')">Activar Saludo</button>
+</body>
+
+</html>
