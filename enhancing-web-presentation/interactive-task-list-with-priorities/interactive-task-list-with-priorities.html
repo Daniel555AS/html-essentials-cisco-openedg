@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel555AS">
+    <meta name="description" content="Lista de tareas interactivas con prioridades">
+    <title>Lista de Tareas</title>
+    <style>
+        .boton-tarea {
+            margin-left: 3em;
+            background-color: rgb(221, 162, 54);
+            border: none;
+            border-radius: 5em;
+            padding: 1em;
+            color: rgb(251, 251, 179);
+            cursor: pointer;
+        }
+
+        .contenedor-tarea {
+            background-color: rgb(32, 147, 193);
+            border-radius: 5em;
+            padding: 1.5em;
+            margin: 1em;
+            width: 40vw;
+        }
+
+        .tarea {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            font-size: 1.1em;
+        }
+
+        .contenedor-tarea[data-status="completada"] {
+            background-color: rgb(67, 195, 86);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tarea-1" class="contenedor-tarea" data-status="pendiente">
+        <p class="tarea">Estudiar HTML por 45 minutos.<button type="button" class="boton-tarea"
+                onclick="alert('Tarea Completada. ¡Felicidades!'); document.getElementById('tarea-1').dataset.status='completada'; ">Completada</button>
+        </p>
+    </div>
+
+    <div id="tarea-2" class="contenedor-tarea" data-status="pendiente">
+        <p class="tarea">Realizar 60 minutos de ejercicio físico.<button type="button" class="boton-tarea"
+                onclick="alert('Tarea Completada. ¡Felicidades!'); document.getElementById('tarea-2').dataset.status='completada';">Completada</button>
+        </p>
+    </div>
+
+    <div id="tarea-3" class="contenedor-tarea" data-status="pendiente">
+        <p class="tarea">Leer por 20 minutos un libro de Filosofía.<button class="boton-tarea"
+                onclick="alert('Tarea Completada. ¡Felicidades!'); document.getElementById('tarea-3').dataset.status='completada'">Completada</button>
+        </p>
+    </div>
+</body>
+
+</html>
